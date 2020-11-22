@@ -21,7 +21,7 @@ CHROMEDRIVER_PATH = "/usr/bin/chromedriver"
 YOUTUBE_BASE_URL = "https://www.youtube.com/"
 
 options = Options()
-options.headless = True
+#options.headless = True
 # driver = webdriver.Chrome(executable_path=ChromeDriverManager.install(), chrome_options=options)
 driver = webdriver.Firefox(executable_path=GeckoDriverManager().install(), options=options)
 channelUrl = ''
@@ -41,7 +41,7 @@ def make_soup(url):
 def validateChannelUrl(link):
     global driver
 
-    if re.match("^((http|https)://)(www\.)youtube\.com/(channel/|user/|c/)[a-zA-Z0-9\-]{1,}$", link) is None:
+         if re.match("^((http|https)://)(www\.)youtube\.com/(channel/|user/|c/)[a-zA-Z0-9\-\_]{1,}$", link) is None:
         print("Wrong channel URL")
         print("Try including the whole URL starting by http/https...")
         return False

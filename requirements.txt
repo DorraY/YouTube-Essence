@@ -4,8 +4,6 @@ chardet==3.0.4
 colorama==0.4.3
 configparser==5.0.0
 crayons==0.4.0
-dataclasses==0.7
-dataclasses-json==0.5.2
 future==0.18.2
 gazpacho==1.0
 idna==2.10
