@@ -41,7 +41,7 @@ def make_soup(url):
 def validateChannelUrl(link):
     global driver
 
-         if re.match("^((http|https)://)(www\.)youtube\.com/(channel/|user/|c/)[a-zA-Z0-9\-\_]{1,}$", link) is None:
+    if re.match("^((http|https)://)(www\.)youtube\.com/(channel/|user/|c/)[a-zA-Z0-9\-\_]{1,}$", link) is None:
         print("Wrong channel URL")
         print("Try including the whole URL starting by http/https...")
         return False
