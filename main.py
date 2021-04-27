@@ -169,5 +169,5 @@ def main():
 
         print("Finished!")
 
-
-main()
+if __name__ == '__main__':
+    main()
